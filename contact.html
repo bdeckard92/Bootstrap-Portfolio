@@ -29,23 +29,46 @@
                     <h1>Contact</h1>
                 </div>
                 <div>
-                <p>Hey! You can send me an email!
-                <a href="mailto:bdeckard92@gmail.com?Subject=Website%20Mail" target="_top">Send Mail</a>...Or if you don't use office express, fill out the info below!</p>
+                    <p>Hey! You can send me an email!
+                        <a target="_top" href="mailto:bdeckard92@gmail.com">Send Mail</a>...Or if you don't use office express, fill out the info below!</p>
                 </div>
-                <div class="input-group">
-                    <span class="input-group-addon" id="basic-addon1">Name</span>
-                    <input type="text" class="form-control" placeholder="Name" aria-describedby="basic-addon1">
-                </div>
-                <br>
-                <div class="input-group">
-                    <span class="input-group-addon" id="basic-addon1">Email</span>
-                    <input type="text" class="form-control" placeholder="Email" aria-describedby="basic-addon1">
-                </div>
-                <div class="form-group">
-                    <label for="comment">Comment:</label>
-                    <textarea class="form-control" rows="5" id="comment"></textarea>
-                </div>
-                
+                <form id="ajax-contact" method="post" action="mailer.php">
+                    <div class="input-group">
+                        <span class="input-group-addon" id="basic-addon1">Name</span>
+                        <input id="name" type="text" class="form-control" placeholder="Name" aria-describedby="basic-addon1">
+                    </div>
+                    <br>
+                    <div class="input-group">
+                        <span class="input-group-addon" id="basic-addon1">Email</span>
+                        <input type="text" id="email" class="form-control" placeholder="Email" aria-describedby="basic-addon1">
+                    </div>
+                    <div class="form-group">
+                        <label for="comment">Comment:</label>
+                        <textarea class="form-control" id="message" rows="5" id="comment"></textarea>
+                    </div>
+                    <div class="field">
+                        <button type="submit">Send</button>
+                    </div>
+                </form>
+                <div id="form-messages"></div>
+                <!--<form id="ajax-contact" method="post" action="mailer.php">
+                    <div class="field">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="field">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="field">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <div class="field">
+                        <button type="submit">Send</button>
+                    </div>
+                </form>-->
+                <div id="form-messages"></div>
             </div>
             <br>
             <div class="col-md-3">
@@ -69,6 +92,8 @@
                 <a class="navbar-brand text-center">@ Copyright 2016 Bob Deckard</a>
             </div>
         </nav>
+        <script src="jquery-2.1.0.min.js"></script>
+        <script src="app.js"></script>
 </body>
 
 </html>
