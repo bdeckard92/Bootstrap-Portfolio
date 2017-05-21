@@ -5,6 +5,7 @@
     <title>Bob Deckard Portfolio</title>
     <meta name="description" contents="a few examples of work by Bob Deckard. These are works in progress" />
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
@@ -31,41 +32,42 @@
             <div class="row">
                 <div class="col-md-4">
                     <a href="https://pacific-oasis-39137.herokuapp.com/index.html" target="blank">
-                        <img alt="bdeckard92" src="assets/adultfull.png" width="165" height="170"></img>
+                        <img class= "img-rounded" alt="bdeckard92" src="assets/adultfull.png" width="165" height="170"></img>
                     </a>
-                    <div id="hang text">Adulting 101</div>
+                    <div id="adulting_text">Adulting 101</div>
                 </div>
                 <div class="col-md-4">
                     <a href="https://murmuring-coast-10755.herokuapp.com/" target="blank">
-                        <img alt="bdeckard92" src="assets/pony_jewels.png" width="165" height="170"></img>
+                        <img class="img-rounded" alt="bdeckard92" src="assets/pony_jewels.png" width="165" height="170"></img>
                     </a>
-                    <div id="jewel text">Pony Points!</div>
+                    <div id="jewel_text">Pony Points!</div>
                 </div>
             
                 <div class="col-md-4">
                         <a href="https://damp-dawn-36919.herokuapp.com/" target="blank">
-                    <img alt="bdeckard92" src="assets/hassel_trivia.png" width="165" height="170"></img>
-                    <div id="trivia text">Hasselhof Trivia</div></a>
+                    <img class="img-rounded" alt="bdeckard92" src="assets/hassel_trivia.png" width="165" height="170"></img></a>
+                    <div id="trivia_text">Hasselhof Trivia</div>
                 </div>
                 </div>
             <div class="row">
                 <div class="col-md-4">
                 <a href="https://gentle-ocean-44549.herokuapp.com/" target="blank">
-                    <img id="rutgersinfo" alt="bdeckard92" src="assets/giffail.png" width="165" height="170"></img></a>
-                    <div id="happy text">Gif Fail!</div>
+                    <img class="img-rounded" id="rps" alt="bdeckard92" src="assets/giffail.png" width="165" height="170"></img></a>
+                    
+                    <div id="happy_text">Gif Fail!</div>
                 </div>
             
                 <div class="col-md-4">
                     <a href="https://enigmatic-wave-76860.herokuapp.com/" target="blank">
-                        <img id="rps" alt="bdeckard92" src="assets/painttrain.png" width="165" height="170"></img>
+                        <img class="img-rounded" id="rps" alt="bdeckard92" src="assets/painttrain.png" width="165" height="170"></img>
                     </a>
-                    <div id="train text">Train Scheduler</div>
+                    <div id="train_text">Train Scheduler</div>
                 </div>
                 <div class="row">
                     <div class="col-md-4">
-                        <a href="https://still-wave-53546.herokuapp.com/" target="blank">
-                        <img id="rps" alt="bdeckard92" src="assets/truth.png" width="165" height="170"></img>
-                        <div id="res_req text">Mongo Truth Scraper</div></a>
+                        <a href="https://still-wave-53546.herokuapp.com/" data-placement="top" target="blank">
+                        <img class="img-rounded" id="rps" alt="bdeckard92" src="assets/truth.png" width="165" height="170"></img>\</a>
+                        <div id="mongo_truth">Mongo Truth Scraper</div>
                     </div>
                 </div>
             </div>
@@ -93,6 +95,11 @@
             <a class="navbar-brand text-left">@ Copyright 2016 Bob Deckard</a>
         </nav>
     </div>
+    <script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip(); 
+});
+</script>
    
 </body>
 
